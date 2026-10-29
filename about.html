@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="広島を拠点に活動するWebコーダー、せいかのプロフィールをご紹介します。"
+    />
+    <title>わたしについて | my portfolio</title>
+    <link rel="icon" href="./favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Noto+Serif+JP:wght@400;500;700&family=Zen+Maru+Gothic&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner">
+        <a class="logo" href="./index.html" aria-label="seika. トップページ">
+          seika<span>.</span>
+        </a>
+        <nav class="header__nav" id="site-navigation" aria-label="メインナビゲーション">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="#profile">わたしについて</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="./index.html#works">制作実績</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="./index.html#skills">できること</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="./index.html#flow">ご依頼の流れ</a>
+            </li>
+            <li class="header__nav-item header__nav-item--contact">
+              <a href="./contact.html">お問い合わせ</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="./contact.html" class="header__contact-btn">お問い合わせ</a>
+        <button
+          class="header__menu-toggle"
+          type="button"
+          aria-label="メニューを開く"
+          aria-controls="site-navigation"
+          aria-expanded="false"
+          data-menu-toggle
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="about-hero" aria-labelledby="about-hero-title">
+        <div class="about-hero__inner">
+          <div class="about-hero__content">
+            <p class="about-hero__kicker">ABOUT ME</p>
+            <h1 class="about-hero__title" id="about-hero-title">
+              一緒に考えて、<br />一緒につくる。
+            </h1>
+            <p class="about-hero__description">
+              Webサイトづくりが初めてでも大丈夫です。<br />
+              やりたいこと、大切にしたいことをお聞きしながら、<br class="about-hero__desktop-break" />
+              あなたらしさが伝わるサイトへ丁寧に仕上げます。
+            </p>
+          </div>
+          <div class="about-hero__gallery">
+            <img
+              class="about-hero__main-photo"
+              src="./img/ cafe.jpg"
+              alt="緑に囲まれたカフェの店内"
+              width="1333"
+              height="2000"
+            />
+            <img
+              class="about-hero__sub-photo"
+              src="./img/top.jpg"
+              alt="緑と海が広がる海辺の風景"
+              width="1500"
+              height="2000"
+            />
+            <span class="about-hero__code" aria-hidden="true">code with care.</span>
+            <span class="about-hero__sparkle" aria-hidden="true">✦</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="profile" id="profile" aria-labelledby="profile-title">
+        <div class="profile__inner">
+          <div class="profile__visual">
+            <p class="profile__kicker">PROFILE</p>
+            <div class="profile__photo">
+              <img
+                src="./img/seika.jpg"
+                alt="竹林の中に立つせいか"
+                width="623"
+                height="832"
+              />
+              <img
+                class="profile__avatar"
+                src="./img/seika-icon.jpg"
+                alt=""
+                width="432"
+                height="432"
+              />
+            </div>
+          </div>
+          <div class="profile__content">
+            <h2 class="profile__title" id="profile-title">せいか</h2>
+            <p class="profile__role">SEIKA / WEB CODER</p>
+            <p class="profile__location">広島を拠点に活動しています。</p>
+            <p class="profile__description">
+              医療事務として働く中で身につけた「丁寧にお話を聞くこと」と「正確に確認すること」を大切に、Webサイトを制作しています。
+            </p>
+            <p class="profile__description">
+              ご希望や目的を一つずつ伺い、細かなところまで確認しながら、安心してお任せいただける制作を心がけています。
+            </p>
+            <div class="profile__qa">
+              <h3 class="profile__qa-title">一問一答</h3>
+              <dl class="profile__qa-list">
+                <div class="profile__qa-item">
+                  <dt>好きなテイスト</dt>
+                  <dd>ナチュラル・やさしい・やわらかい</dd>
+                </div>
+                <div class="profile__qa-item">
+                  <dt>使用可能ツール</dt>
+                  <dd>Figma・Canva</dd>
+                </div>
+                <div class="profile__qa-item">
+                  <dt>好きなもの</dt>
+                  <dd>お寿司・映画・音楽</dd>
+                </div>
+                <div class="profile__qa-item">
+                  <dt>性格</dt>
+                  <dd>マイペース・コツコツ派</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="story" aria-labelledby="story-title">
+        <div class="story__inner">
+          <div class="story__heading">
+            <p class="story__kicker">MY STORY</p>
+            <h2 class="story__title" id="story-title">これまでの歩み</h2>
+          </div>
+          <ol class="story__timeline">
+            <li class="story__item">
+              <p class="story__date">2019.04 —</p>
+              <h3 class="story__item-title">医療事務として勤務</h3>
+              <p class="story__description">
+                医療事務の仕事を通じて、人の話を丁寧に聞き、正確に確認する姿勢を身につけました。
+              </p>
+            </li>
+            <li class="story__item">
+              <p class="story__date">2025.05 —</p>
+              <h3 class="story__item-title">デイトラでWeb制作を学ぶ</h3>
+              <p class="story__description">
+                Web制作を学び始め、デザインをコードで形にする楽しさに出会いました。
+              </p>
+            </li>
+            <li class="story__item">
+              <p class="story__date">2026.09 —</p>
+              <h3 class="story__item-title">Web制作をスタート</h3>
+              <p class="story__description">
+                一つひとつのご相談に向き合いながら、Web制作の活動をスタートしました。
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__inner">
+        <a class="logo" href="./index.html" aria-label="seika. トップページ">
+          seika<span>.</span>
+        </a>
+        <p class="footer__message">想いに寄り添い、丁寧にカタチに。</p>
+        <small class="footer__copyright">© <span data-current-year></span> seika design</small>
+      </div>
+    </footer>
+    <script src="./js/script.js" defer></script>
+  </body>
+</html>

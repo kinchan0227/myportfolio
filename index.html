@@ -1,16 +1,294 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>my portfolio</title>
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Noto+Serif+JP:wght@400;500;700&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
-</head>
-<body>
-  <h1>My Portfolio</h1>
-  <script src="./js/script.js" defer></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>my portfolio</title>
+    <link rel="icon" href="./favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Noto+Serif+JP:wght@400;500;700&family=Zen+Maru+Gothic&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner">
+        <a class="logo" href="./index.html" aria-label="seika. トップページ">
+          seika<span>.</span>
+        </a>
+        <nav class="header__nav" id="site-navigation" aria-label="メインナビゲーション">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="#about">わたしについて</a>
+            </li>
+            <li class="header__nav-item"><a href="#works">制作実績</a></li>
+            <li class="header__nav-item"><a href="#skills">できること</a></li>
+            <li class="header__nav-item"><a href="#flow">ご依頼の流れ</a></li>
+            <li class="header__nav-item header__nav-item--contact">
+              <a href="./contact.html">お問い合わせ</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="./contact.html" class="header__contact-btn">お問い合わせ</a>
+        <button
+          class="header__menu-toggle"
+          type="button"
+          aria-label="メニューを開く"
+          aria-controls="site-navigation"
+          aria-expanded="false"
+          data-menu-toggle
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero__background-decorations" aria-hidden="true">
+          <div class="hero__blob hero__blob--sage"></div>
+          <div class="hero__blob hero__blob--peach"></div>
+        </div>
+
+        <div class="hero__ambient-decorations" aria-hidden="true">
+          <div class="hero__dots"></div>
+          <div class="hero__bubbles"></div>
+        </div>
+
+        <div class="hero__inner">
+          <div class="hero__content">
+            <p class="hero__kicker">DESIGN & DEVELOPMENT</p>
+            <h1 class="hero__title">
+              思いを、<br /><span class="hero__title-accent">カタチ</span>に。
+            </h1>
+            <p class="hero__description">
+              あなたの中にある、まだ言葉にならない想い。そっとすくい上げて、心に届くデザインにします。
+            </p>
+          </div>
+
+          <div class="hero__photo-card">
+            <div class="hero__art-decorations" aria-hidden="true">
+              <div class="hero__sparkle hero__sparkle--1"></div>
+              <div class="hero__sparkle hero__sparkle--2"></div>
+              <div class="hero__sparkle hero__sparkle--3"></div>
+              <div class="hero__flower"></div>
+            </div>
+            <div class="hero__photo">
+              <img src="./img/top.jpg" alt="" width="300" height="300" />
+              <p class="hero__photo-caption">FEEL THE GENTLE BREEZE</p>
+            </div>
+          </div>
+        </div>
+        <div class="hero__scroll">
+          SCROLL
+          <div class="hero__scroll-line"></div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="about__inner">
+          <div class="about__photo">
+            <img src="./img/seika.jpg" alt="" width="400" height="500" />
+          </div>
+          <div class="about__content">
+            <p class="about__kicker">ABOUT</p>
+            <h2 class="about__title">わたしについて</h2>
+            <div class="about__info">
+              <p class="about__name">はじめまして、せいかです。
+想いに寄り添うコーダーです。</p>
+              <p class="about__role">Webコーダー</p>
+              <p class="about__location">拠点：広島</p>
+            </div>
+            <p class="about__description">
+              Webサイトのコーディングをしています。デザインをそのまま形にすることを大切にしています。
+            </p>
+            <a href="./about.html" class="about__link">もっと詳しく見る →</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="works" id="works">
+        <div class="works__inner">
+          <p class="works__kicker">WORKS</p>
+          <h2 class="works__title">制作実績</h2>
+          <p class="works__description">
+            これまでに携わったお仕事の一部をご紹介します。
+          </p>
+          <div class="works__grid">
+            <a
+              href="https://good-ocean.local"
+              class="works__item works__item-1"
+              aria-label="GOOD OCEANのサイトを見る"
+            >
+              <img
+                src="./img/good ocean.png"
+                alt="GOOD OCEAN"
+                width="600"
+                height="400"
+              />
+            </a>
+            <div class="works__item works__item-2">
+              <img
+                src="./img/minamiclinic.png"
+                alt=""
+                width="600"
+                height="400"
+              />
+            </div>
+          </div>
+          <a href="./works.html" class="works__more">
+            全ての実績を見る <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="skills" id="skills">
+        <div class="skills__inner">
+          <div class="skills__heading">
+            <p class="skills__kicker">WHAT I DO</p>
+            <h2 class="skills__title">できること</h2>
+            <p class="skills__description">
+              お話を聞くところから、デザイン、カタチにするところまで。<br />
+              必要な部分だけのご相談も歓迎です。
+            </p>
+          </div>
+          <div class="skills__grid">
+            <article class="skills__card skills__card--coding">
+              <span class="skills__number">01</span>
+              <svg class="skills__icon" viewBox="0 0 96 96" aria-hidden="true">
+                <rect x="14" y="15" width="68" height="66" rx="4" />
+                <path d="M14 30h68M24 23h1m7 0h1m7 0h1" />
+                <path d="M29 66a19 19 0 0 1 38 0v9H29z" />
+              </svg>
+              <h3 class="skills__name">Coding</h3>
+              <p class="skills__subtitle">コーディング</p>
+              <div class="skills__list">
+                <p>Figmaのデザインカンプをもとに、HTML・CSS（Sass）で丁寧にコーディングします。レスポンシブ対応やGulpを使った開発環境の構築も可能です。</p>
+              </div>
+            </article>
+            <article class="skills__card skills__card--javascript">
+              <span class="skills__number">02</span>
+              <svg class="skills__icon skills__icon--code" viewBox="0 0 96 96" aria-hidden="true">
+                <path d="m35 34-15 14 15 14m26-28 15 14-15 14M55 25 41 71" />
+              </svg>
+              <h3 class="skills__name">JavaScript</h3>
+              <p class="skills__subtitle">動きの実装</p>
+              <div class="skills__list">
+                <p>ハンバーガーメニューなどの基本的な動きや、Swiperを使ったスライダーを実装し、使いやすく心地よいサイトに仕上げます。</p>
+              </div>
+            </article>
+            <article class="skills__card skills__card--wordpress">
+              <span class="skills__number">03</span>
+              <svg class="skills__icon" viewBox="0 0 96 96" aria-hidden="true">
+                <rect x="12" y="15" width="72" height="66" rx="5" />
+                <path d="M12 30h72m-62-7h1m7 0h1" />
+                <rect x="24" y="40" width="20" height="30" rx="3" />
+                <path d="M54 43h19m-19 12h19m-19 12h19" />
+              </svg>
+              <h3 class="skills__name">WordPress</h3>
+              <p class="skills__subtitle">WordPress制作</p>
+              <div class="skills__list">
+                <p>HTMLサイトのWordPress化やオリジナルテーマ制作、固定ページ・投稿ページ、ブログ・お知らせ機能の実装に対応します。</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="flow" id="flow">
+        <div class="flow__inner">
+          <div class="flow__heading">
+            <p class="flow__kicker">WORK FLOW</p>
+            <h2 class="flow__title">ご依頼の流れ</h2>
+          </div>
+          <ol class="flow__steps">
+            <li class="flow__step">
+              <span class="flow__number">01</span>
+              <span class="flow__icon flow__icon--contact" aria-hidden="true">
+                <svg viewBox="0 0 40 40">
+                  <rect x="7" y="11" width="26" height="18" rx="1" />
+                  <path d="m8 13 12 10 12-10" />
+                </svg>
+              </span>
+              <h3 class="flow__step-title">お問い合わせ</h3>
+              <p class="flow__description">
+                まずはお気軽にご相談ください。
+              </p>
+            </li>
+            <li class="flow__step">
+              <span class="flow__number">02</span>
+              <span class="flow__icon flow__icon--hearing" aria-hidden="true">
+                <svg viewBox="0 0 40 40">
+                  <path d="M20 10c-8 0-14 4.5-14 10s6 10 14 10 14-4.5 14-10-6-10-14-10Z" />
+                  <circle cx="15" cy="20" r="1" />
+                  <circle cx="25" cy="20" r="1" />
+                </svg>
+              </span>
+              <h3 class="flow__step-title">ヒアリング</h3>
+              <p class="flow__description">
+                想いや目的、現在のお悩みをじっくりお聞きします。
+              </p>
+            </li>
+            <li class="flow__step">
+              <span class="flow__number">03</span>
+              <span class="flow__icon flow__icon--proposal" aria-hidden="true">
+                <svg viewBox="0 0 40 40">
+                  <path d="M10 6h20v28H10zM15 15h10m-10 6h10" />
+                </svg>
+              </span>
+              <h3 class="flow__step-title">ご提案・お見積り</h3>
+              <p class="flow__description">
+                内容を整理し、最適な進め方と費用をご提案します。
+              </p>
+            </li>
+            <li class="flow__step">
+              <span class="flow__number">04</span>
+              <span class="flow__icon flow__icon--start" aria-hidden="true">
+                <svg viewBox="0 0 40 40">
+                  <path d="m20 5 3.5 10.5L34 19l-10.5 3.5L20 33l-3.5-10.5L6 19l10.5-3.5L20 5Z" />
+                </svg>
+              </span>
+              <h3 class="flow__step-title">制作スタート</h3>
+              <p class="flow__description">
+                ご確認を重ねながら、丁寧にカタチにします。
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="contact-cta" aria-labelledby="contact-cta-title">
+        <span class="contact-cta__sparkle contact-cta__sparkle--blue" aria-hidden="true">✦</span>
+        <span class="contact-cta__sparkle contact-cta__sparkle--peach" aria-hidden="true">✦</span>
+        <div class="contact-cta__inner">
+          <p class="contact-cta__kicker">CONTACT</p>
+          <h2 class="contact-cta__title" id="contact-cta-title">
+            いっしょに、つくりませんか？
+          </h2>
+          <p class="contact-cta__description">
+            まだぼんやりとした段階でも大丈夫です。<br />
+            あなたの想いを、ぜひ聞かせてください。
+          </p>
+          <a class="contact-cta__link" href="./contact.html">
+            お問い合わせはこちら <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__inner">
+        <a class="logo" href="./index.html" aria-label="seika. トップページ">
+          seika<span>.</span>
+        </a>
+        <p class="footer__message">想いに寄り添い、丁寧にカタチに。</p>
+        <small class="footer__copyright">© <span data-current-year></span> seika design</small>
+      </div>
+    </footer>
+    <script src="./js/script.js" defer></script>
+  </body>
 </html>
